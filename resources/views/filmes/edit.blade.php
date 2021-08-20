@@ -18,7 +18,7 @@ Editar filme {{ $filme->nome }}
     <form method="post" action="{{route('update-film')}}">
         @csrf
         <div class="form-group">
-            <label for="nome">Nome do filme:</label>
+            <label for="nome">Nome:</label>
             <input type="hidden" name="id" value="{{$filme->id}}">
             <input class="form-control" type="text" name="nome" value="{{$filme->nome}}" id="nome">
         </div>
